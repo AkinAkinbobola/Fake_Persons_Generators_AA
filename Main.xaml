@@ -1,0 +1,707 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="701,851" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="38">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="36">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="526,786" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="numOfPersons" />
+      <Variable x:TypeArguments="x:Int32" Name="convertednumOfPersons" />
+      <Variable x:TypeArguments="x:Boolean" Name="isCorrect">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Boolean" Value="True" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="fakeName" />
+      <Variable x:TypeArguments="x:String" Name="fakeEmail" />
+      <Variable x:TypeArguments="x:String" Name="fakePhoneNumber" />
+      <Variable x:TypeArguments="x:String" Name="fakeAddress" />
+      <Variable x:TypeArguments="x:String" Name="fakeCompanyName" />
+      <Variable x:TypeArguments="x:String" Name="fakeRole" />
+      <Variable x:TypeArguments="sd:DataTable" Name="excelDT" />
+      <Variable x:TypeArguments="x:String" Name="randGender" />
+      <Variable x:TypeArguments="x:String" Name="randName" />
+      <Variable x:TypeArguments="x:String" Name="randCountry" />
+      <Variable x:TypeArguments="x:String" Name="CurrentDate">
+        <Variable.Default>
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Now.ToString(&quot;dd-MM-yyyy&quot;)" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="file" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the number of persons: " Title="Fake Persons Generator">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[numOfPersons]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <TryCatch DisplayName="Phase 1" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Int32">[convertednumOfPersons]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(numOfPersons)]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="488,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Input a valid number&quot;]" />
+              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">[isCorrect]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <If Condition="[isCorrect]" sap:VirtualizedContainerService.HintSize="484,873" sap2010:WorkflowViewState.IdRef="If_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If.Then>
+            <Sequence sap:VirtualizedContainerService.HintSize="376,686" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="baseValuesDT" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BuildDataTable DataTable="[excelDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Full_x0020_Names&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Company_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Role_x0020_In_x0020_Company&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+              <ui:BuildDataTable DataTable="[baseValuesDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Name_x0020_Set&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Gender&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Country&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser IE: Generate a Random Name - Fake Name Generator" sap:VirtualizedContainerService.HintSize="543,3338" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="Simulate" ScopeGuid="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="509,3122" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
+                        <ui:InterruptibleDoWhile.Body>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="473,2957" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="s:String[]" Name="allGenders">
+                                <Variable.Default>
+                                  <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;Random&quot;, &quot;Male&quot;, &quot;Female&quot;}" />
+                                </Variable.Default>
+                              </Variable>
+                              <Variable x:TypeArguments="s:String[]" Name="allNameSets">
+                                <Variable.Default>
+                                  <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;American&quot;, &quot;Brazil&quot;,&quot;Chinese&quot;, &quot;French&quot;, &quot;German&quot;, &quot;Igbo&quot;}" />
+                                </Variable.Default>
+                              </Variable>
+                              <Variable x:TypeArguments="s:String[]" Name="allCountries">
+                                <Variable.Default>
+                                  <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;Australia&quot;, &quot;Canada&quot;, &quot;Estonia&quot;, &quot;Greenland&quot;, &quot;South Africa&quot;, &quot;Uruguay&quot;}" />
+                                </Variable.Default>
+                              </Variable>
+                              <Variable x:TypeArguments="x:Int32" Name="randomGenderInt" />
+                              <Variable x:TypeArguments="x:Int32" Name="randomNameSetInt" />
+                              <Variable x:TypeArguments="x:Int32" Name="randomCountryInt" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,255" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                              <ui:MultipleAssign.AssignOperations>
+                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[randomGenderInt]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[new Random().Next(0, 2)]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[randGender]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[allGenders(randomGenderInt)]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[randomNameSetInt]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[new Random().Next(0, 5)]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[randName]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[allNameSets(randomNameSetInt)]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[randomCountryInt]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[new Random().Next(0, 5)]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[randCountry]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[allCountries(randomCountryInt)]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                </scg:List>
+                              </ui:MultipleAssign.AssignOperations>
+                            </ui:MultipleAssign>
+                            <uix:NSelectItem DisplayName="Select Item 'Male'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[randGender]" ScopeIdentifier="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="3">
+                                  <x:String>Random</x:String>
+                                  <x:String>Male</x:String>
+                                  <x:String>Female</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-cs-sw.php" DesignTimeRectangle="416, 212, 200, 25" ElementType="DropDown" FriendlyName="'Male'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='select-one' class='' aaname='Gender' /&gt;" Guid="1b2bce60-69be-447f-91d3-4ad0cf10f46b" InformativeScreenshot="6064fbacbdc18bb5c3ac1922cc646af2.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Male, Czech, Sweden - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="332, 208, 80, 32" ElementType="ListItem" FriendlyName="'Gender'" FullSelectorArgument="&lt;webctrl parentid='options' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='options' tag='LI' type='' class='lab' aaname='Gender' check:innerText='Gender' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAkCAYAAAAXSR0AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGISURBVGhD7ZWBjYMwEAS/VzqgBUqgA1qgBbqgGKKNsvn7k40VaUN4siOdwOaM7cE2P5uRYqFiLFSMhYqxUDEWKsZCxVioGAsVY6Fivkbosixb13X3wP27OFxonFiMeZ4fGe/hkkLHcXxOal3XR+1vfaxTczmhWIF7E5qm6Y/QYRie+QhIJ3yGa9/3xRyQ38GI/cePjEAbEvvB+HCP6x6HCeXgIKAFJXHibEthLCPwERAs5za4AtTXcnjcUC7bxH4YpxFKSRxsDa7kmBdXN+BEYw6fc6WzTHlZKMvxA8ccvKPUT4uPCY2DZ6Aub8EcoCU0fgAeI7E/3HML1+L0Qjm4vOXz2Zq3XYnSRPmOV4Xm8URK/bT4+E8p18dyjZbQKK8mtJSTObVQwAHGSZRE83jgTwggn6upJRTwHSyX+qkJQx2oPd/jUKEgrowYUR4onaWvCAWsQ1AwgkIBt34O8C+EXh0LFWOhYixUjIWKsVAxFirGQsVYqBgLFWOhYixUjIWKsVAxFipl227CWFRM3GU77gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                            <uix:NSelectItem DisplayName="Select Item 'Czech'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[randName]" ScopeIdentifier="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="37">
+                                  <x:String>American</x:String>
+                                  <x:String>Arabic</x:String>
+                                  <x:String>Australian</x:String>
+                                  <x:String>Brazil</x:String>
+                                  <x:String>Chechen (Latin)</x:String>
+                                  <x:String>Chinese</x:String>
+                                  <x:String>Chinese (Traditional)</x:String>
+                                  <x:String>Croatian</x:String>
+                                  <x:String>Czech</x:String>
+                                  <x:String>Danish</x:String>
+                                  <x:String>Dutch</x:String>
+                                  <x:String>England/Wales</x:String>
+                                  <x:String>Eritrean</x:String>
+                                  <x:String>Finnish</x:String>
+                                  <x:String>French</x:String>
+                                  <x:String>German</x:String>
+                                  <x:String>Greenland</x:String>
+                                  <x:String>Hispanic</x:String>
+                                  <x:String>Hobbit</x:String>
+                                  <x:String>Hungarian</x:String>
+                                  <x:String>Icelandic</x:String>
+                                  <x:String>Igbo</x:String>
+                                  <x:String>Italian</x:String>
+                                  <x:String>Japanese</x:String>
+                                  <x:String>Japanese (Anglicized)</x:String>
+                                  <x:String>Klingon</x:String>
+                                  <x:String>Ninja</x:String>
+                                  <x:String>Norwegian</x:String>
+                                  <x:String>Persian</x:String>
+                                  <x:String>Polish</x:String>
+                                  <x:String>Russian</x:String>
+                                  <x:String>Russian (Cyrillic)</x:String>
+                                  <x:String>Scottish</x:String>
+                                  <x:String>Slovenian</x:String>
+                                  <x:String>Swedish</x:String>
+                                  <x:String>Thai</x:String>
+                                  <x:String>Vietnamese</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-cs-sw.php" DesignTimeRectangle="416, 245, 200, 25" ElementType="DropDown" FriendlyName="'Czech'" FullSelectorArgument="&lt;webctrl id='n' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='n' tag='SELECT' type='select-one' class='' aaname='Name set' /&gt;" Guid="66171826-6d6f-489d-90cd-1fd1c55a4fdc" InformativeScreenshot="bb7c5d085842a45796a60b2aa9a25900.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Male, Czech, Sweden - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="332, 241, 80, 32" ElementType="ListItem" FriendlyName="'Name set'" FullSelectorArgument="&lt;webctrl idx='3' parentid='options' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='options' tag='LI' class='lab' aaname='Name set' check:innerText='Name set' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAkCAYAAAAXSR0AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGpSURBVGhD7ZOBbYNAEATTqzugBUpwB26BFuiCYogWZZ3N6Z9gWDlStCOdDMdzfzd+PtZgJULNRKiZCDUToWYi1EyEmolQMxFqJkLNRKiZl4SO47jebrctcE2maXrm/xM617IsX9l9TgvVTSL0m1NCh2HYfu/3+5ZvCeW9BtYR1kKNumae5x+5Oow+Q2jdCt6t69E/0d4ZoPbA2NsLnBKKX4pAw9oU0aa1OVwDPe1A1+AZ4B68VzmE961BdT33RY69PR6P7VnvYOg93jvCaaFsFs20hFZ4qjEEYC0Oo8NTDgemAApmDVClK3wf0YLPVBZz6OGtQgGHaQlVQRpnhCIA/5RWtIT2Ptu9Z4w/EUoJOijQRvipXTmhCFBrHKEnTvM9WW8XCphjAJ5cfqrAIZR1df9XqIJ4zf0qR6RXLgutJwBUEdr8FaE9CbhmHQXvcz/Aevyja32C3jCX7of7I1wWCpjXxjSHARwnlLCWRk9oXVd7rweCQYHoRfP6R7Z4SWj4nQg1E6FmItRMhJqJUDMRaiZCzUSomQg1E6FmItRMhJqJUDMRamVdPwECuuIKmvDh4QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                            <uix:NSelectItem DisplayName="Select Item 'Country'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[randCountry]" ScopeIdentifier="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="31">
+                                  <x:String>Australia</x:String>
+                                  <x:String>Austria</x:String>
+                                  <x:String>Belgium</x:String>
+                                  <x:String>Brazil</x:String>
+                                  <x:String>Canada</x:String>
+                                  <x:String>Cyprus (Anglicized)</x:String>
+                                  <x:String>Cyprus (Greek)</x:String>
+                                  <x:String>Czech Republic</x:String>
+                                  <x:String>Denmark</x:String>
+                                  <x:String>Estonia</x:String>
+                                  <x:String>Finland</x:String>
+                                  <x:String>France</x:String>
+                                  <x:String>Germany</x:String>
+                                  <x:String>Greenland</x:String>
+                                  <x:String>Hungary</x:String>
+                                  <x:String>Iceland</x:String>
+                                  <x:String>Italy</x:String>
+                                  <x:String>Netherlands</x:String>
+                                  <x:String>New Zealand</x:String>
+                                  <x:String>Norway</x:String>
+                                  <x:String>Poland</x:String>
+                                  <x:String>Portugal</x:String>
+                                  <x:String>Slovenia</x:String>
+                                  <x:String>South Africa</x:String>
+                                  <x:String>Spain</x:String>
+                                  <x:String>Sweden</x:String>
+                                  <x:String>Switzerland</x:String>
+                                  <x:String>Tunisia</x:String>
+                                  <x:String>United Kingdom</x:String>
+                                  <x:String>United States</x:String>
+                                  <x:String>Uruguay</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-cs-sw.php" DesignTimeRectangle="416, 278, 200, 25" ElementType="DropDown" FriendlyName="'Sweden'" FullSelectorArgument="&lt;webctrl id='c' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='c' tag='SELECT' type='select-one' class='' aaname='Country' /&gt;" Guid="c1df306c-1f05-4976-8dea-20e189492949" InformativeScreenshot="7f902ab7184d3ad25295c854f64bed66.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Male, Czech, Sweden - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="351, 279, 56, 17" ElementType="Text" FriendlyName="'Country'" FullSelectorArgument="&lt;webctrl aaname='Country' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Country' tag='LABEL' type='' class='' check:innerText='Country' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAVCAYAAAAaX42MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVFhH7ZWBcYMwDEW7KxuwAiOwASuwAlswDL3X8jihGFJ6adoS3p0usbHl/y2RvE0vxmX47FyGz85luO/7qaqqVdR1PT99Hl3XLec/kpXhpmluDhnH8WPctu088xx+3HCs7DAM8+wnmI6GqbhrCcRJSSh7GXOhENf4jLCTSl1GoMui8GmeqAet4lzUtxg20b32NQmiwH1eyFHD5lG04kp5wPNixLXuj5cWWQx7oKJKlJJw63GuJHTPsGhkbw3kdZLPcGwh5JBhk8QuiIb5/luGow7aWj92kBxq6b9sGDTpeXkvHPrRcs2WYXiU4a13cM9wzEtwbmYxDCYjJP8t5VZxj89za4FjRX7FcCkP5HURtRq5cLAyDPFmjdzmmjYwELGixncqDLliGNgzDGrLmuXG8H/Hyym1M5zKcHwNSu0MpzJsu2+1M5yupe/xYoan6R2Z871l8GHaLQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                            <uix:NClick ClickType="Single" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-us-us.php" DesignTimeRectangle="416, 311, 70, 22" ElementType="Button" FriendlyName="'Generate'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='button red' aaname='Generate' check:text='Generate' /&gt;" Guid="02602f44-3e89-4a15-a455-64855cd96c4c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAaCAYAAAAQXsqGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASpSURBVFhH7ZjLb1tFFMZZp62gUHbdwY4dO1asUlQeYgMCocKWDcsgHn8BEkskGh4rpIodgdKHoOJR2gqSFCRE8wCcuHWbuLax3cTxo7WT4ftN77HHl0m5UhagOp905Jm5Z+ac851z5ib3HreLTNglKiP+QdTW1pa7efacWzv8rKsdfNhLdd+Dd70Q5/qLr7jWJ8c8B2kMEdWr1V3j1deiB42SUCRpsvpEbW5uitGXoxtHUdJkeaJYaE4dj24YZYETI8sT1ev13NoLR6LKoyxwAjd9ojqdjqs/8mhUeZSFCx5u+kS1Wq2oYiityY/9hhCb1ar7K6L7Xws+9XJL3sfOydM78hFugCeq2WxGlRCMdBOjN0XMybH7vFwYP3x7bWb2f0dWcd8B1/wz5/2rnjjlrkd0sgrcgH8lamPyI68ITomgy3sPuGtyZG7vA+6E5mvTs96RMIsGyya/wAg3UKVmp/H628nqAOxFqFzQTKqauZ0Z4tbMRa9P8tKwZ+l9+Mx6GHMomYgqSdpJcA1lCJLs0IqkoPmFPft9Bi2YSxNveAKpPrAuosmqgWr8TToGSLZkbMgGe5ePfujnnLmqs28lZxk4u6Iz89KzCjd7TRFxTj7hL1iVHs/Pa62TEFjUGnZqSjK4U1dkIios4boOxel0RjDSSALF2Yt77ndLIhBnwLr2lZMxzudUiQvjT/k5KB562nWTIC8r8FxCvmFVz42E3NEP3Gdj97ovFeT30vlJtkhWXmJBYw/7kA4glARf1zmGX8af9H4sJgkjEdu1Z2aizCCEXZXBaTlHC9r6DQicvF0BMaBnRDGmba8cGhC1rLEREcPKxFv95yuyc0U+kLCwikPgDzohUegXApsxoBPjIDNRpSRIwGEwT4bMESrtWtIqBERJU+pfSKYkpyUhUSs6IyQqp+oKK8ZaaUqVwxmzSow9JyF2HxpoU2xWp2f8fDuiQpvn9SLCxnEJFcp4R0Th1A9Bv5NBnAwrDaK4EyyYG2pDyEC4n9pqTZwF2xFldxItQJC2H3u0ZpoogjIsTbzp29WuCCMKvwAvG/R/V6sZmRtaozuwUdb52OHOjXGQiShI4cCvxPhKUFkhvh3b75alQzsaoSFw9E4VRetxJ/0aXPAhwtYMiTJyDf1EyR73Fn6F4CL/Rmtc7mmQoB1VFGJknVUwtIK1xucSSh6n0OH3a80pZ9NhfEbOfSdBnzEO/aHsciEjjLm3flaL2V5I55fzL+k5c2xzP/ImRn7UmDX2oMcvNrBFxeMP66yxn7celz5xhD7iA4WQmajawYeiighEWCatLRDmPDMdHAx1GLNWTPYyRo8yZ44wZq2crKXPt3UEgswnxqG+6dgdhtjzcD0Wh/llZ4cyRBR/pteffymqOMpSf+zxYaL4x69y7NOo8ihLRfdgu90eEMWnhEqlsltVgdSfeMaVSiXX7XYHRPFxCuYKhYKrPbdLFiRdnZvzV9LQhzvgv3KqHyGr+N77vrr4RjVSopjL77zrSWo0Gv7zuKFPFIAsWCyXyy6fz7vFxUU3Pz9/18vCwoKPlZhpNwomJAkMEQUgi77kgoc0No2CECsxE7u12wDO/Q20oVm5l8P0ZgAAAABJRU5ErkJggg==" InformativeScreenshot="ce420ac287a7aeba05157c29791460e5.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NGetText DisplayName="Get Text 'Jane B. Maddox'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/" DesignTimeRectangle="512, 377, 530, 18" ElementType="Text" FriendlyName="'Jane B. Maddox'" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='' /&gt;" Guid="0ac33e52-7d41-41f4-a989-5da264c4cfb0" InformativeScreenshot="a45dc1c4512a5cc240eb273d7633d048.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="x:String">[fakeName]</OutArgument>
+                              </uix:NGetText.Text>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Text 'Email Address'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/" DesignTimeRectangle="697, 463, 345, 37" FriendlyName="'JaneBMaddox@jourrapide.…'" FullSelectorArgument="&lt;webctrl idx='9' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DD' class='' /&gt;" Guid="cc97f8c0-3c12-4445-9422-2272659e7c43" InformativeScreenshot="47b5ab7cf3a2341dbfc5214ffb10c31e.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="512, 463, 170, 20" FriendlyName="'Email Address'" FullSelectorArgument="&lt;webctrl idx='9' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Email Address' check:innerText='Email Address' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK4AAAAYCAYAAABjn8aGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIlSURBVHhe7ZeLbSoxEEVTLR1QAh3QASVQA1VQzEYX5aCbkb0xm5DE6B5phP+etc9u3ntbQpiQiBumJOKGKYm4YUoibpiSiBum5M/FvVwuy263u8X5fF6u1+un+k9yOp3ua/c4HA63fv2G/8tdXL/UGup7Ft8RV/2MHREt4r4OTXElz1/xiLhINpp3xH0dHhKX/uPxeC8z3ufv9/uPGe0vuff7F1flUXF93Nr4OoYA398DcT1/xtLXykFjoLX22lw/l7DOJnFbl6qy0OF7Xb8ulOb6Gn65Ko+Ky97ajxeJNYF1PBfaRN1b1Px8DqE+5iKb560+X5vzVJvm1rFCbRF3nKF/43Lw1BFKv3UMFy+ZWvgc4Ressl/qmrjso7xbktR9RBW3JTzr0lbnAOM8R9q0Lmu3ZOytGcbZ9MXlslyOKi4XL7jEGmKLuD5GcwR1PYdoiVOFUZ/KGgs1/55ktLVC6/nZEOTiz+wRxnm6uMhB3eeILeJ6rjXY57fE7eUo/FmJyPszPFXcloQ+R2wRt74MouZPfU1cct0ibmvuGr11ROscwzpP/+LSr/UFX0KFeFTcXr+3ay+va11R9/b8ob4UPeFq3qDxCu3l+bG31mUMsIe/ZGGdof+cccjUuRC/+J64fsG0U679Kn8lbpXPYe3en2OkVEB97lFxgT4PzfE8CbWJ1lmzXxjjLm4IMxFxw5RE3DAlETdMScQNUxJxw5RE3DAhy/IOMXOYl8yMRMUAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="x:String">[fakeEmail]</OutArgument>
+                              </uix:NGetText.Text>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Text 'Phone'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-us-us.php" DesignTimeRectangle="697, 622, 345, 20" FriendlyName="'308-646-8069'" FullSelectorArgument="&lt;webctrl idx='2' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="36a093fa-235b-498a-b2e2-e75ff4867120" InformativeScreenshot="236299b477bfcde912b7342d222fe235.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="512, 622, 170, 20" FriendlyName="'Phone'" FullSelectorArgument="&lt;webctrl idx='4' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Phone' check:innerText='Phone' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK4AAAAYCAYAAABjn8aGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFBSURBVHhe7dfRacMwGEXhTusNPII3yAYZwTN4Cg/jckuuuRGqk5bQ5sfnA0GlCMsPp2rzsQEFES5KIlyURLgoiXBREuGipB+FO8/zNgzD11jX9bYK/L093Ov1ukeZYxzH2w7Cxfvohusop2na14Rw8S4Ow81Ql2W5m18ul/1njaS9+ZlGhq5bXGvtM/QOqf0rkLc/zu0w3AxQ0Wa4jsy3siKU3CN6lud6njhc78lzfLaj9jl+P+KF/PrGbQNzUG3I4j1eyxtXMm6dkXPLNf8C4LwOw3VgilGeCdef+6aUds+jcPOc3iBcdMPN4bjkP8IFeg5v3NYz4fpfhV64DvVRuDnndkXPy8PNL1rSi/BRuNI+1zT/7v1wHi8PVzLedr88E67keTkIF3u4QCWEi5IIFyURLkoiXJREuCiJcFHQtn0CDbd1iPfOhQ4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="x:String">[fakePhoneNumber]</OutArgument>
+                              </uix:NGetText.Text>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Text '2154 Rollins'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-us-us.php" DesignTimeRectangle="512, 395, 530, 38" FriendlyName="'2154 Rollins'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='details' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='details' tag='DIV' class='adr' /&gt;" Guid="999d383b-97cf-4562-98be-96d92569b972" InformativeScreenshot="34c88084ea91d6c40443c07fb34468c4.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="x:String">[fakeAddress]</OutArgument>
+                              </uix:NGetText.Text>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Text 'Company'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-us-us.php" DesignTimeRectangle="697, 297, 345, 20" FriendlyName="'Master Builder'" FullSelectorArgument="&lt;webctrl idx='14' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="250dfc1e-1a6e-416f-9007-32a497035a52" InformativeScreenshot="d5244a5b2cb210fc571ce6b4c78c1cb5.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="512, 297, 170, 20" FriendlyName="'Company'" FullSelectorArgument="&lt;webctrl idx='17' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Company' check:innerText='Company' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK4AAAAYCAYAAABjn8aGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHTSURBVHhe7ZaBjcIwEAS/2nRACXSQDiiBGqiCYvJanomWIyCF/xc5sSNZJD777CjjI19TCA2JuKElETe0JOKGlkTc0JKIG1oScUNL7sQ9HA7TMAw3bb/fX6MhbIMbcXe73UVU/cLpdLr0SegQtsIsrlfa8/l87f1B8rq4jKMdj8drZJrGcbz0qUpzENQ0X3m5V1NeweFQYz6NvWgN76eB5645WIf9KA7+3KEPs7i81GefBS5HlQGxXRqN9zlUcmThvooryMMYieuHp8Z9HZ6hrrMkqWK699xh+8zi8kK9GlWqCIJKSB9C+QEgN3J49RQuLgfC+yRlpcZdXP4BfJ06RvP9XtehD6vElYwa41JWOdaKqzlL4lbJhFdMbxrr4x+JK3gG7ZO4H8TQg1WfCu8Ul7WRzOdorI9/Jq7LSk72Ffowi+vVjJcMkkRxxiyJ++qngtZaEreKyTU5XhVX0LcUCz2YxRVUXSQUCIIwvGwEYw7xvxKXaqh8gnW4Vy7mrBWXPar5PkMfbsQVLsSjl1vjiCJ+K643z+FiEuN6rbje73sPfbgT9x0sVdz/pFbr0I+PFJdqXf9JQh8+TlxfK58JfdmEuCGsJeKGlkTc0JKIGxoyTd/JVLvZCJL7PgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="x:String">[fakeCompanyName]</OutArgument>
+                              </uix:NGetText.Text>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Text 'Occupation'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-us-us.php" DesignTimeRectangle="697, 330, 345, 20" FriendlyName="'Public relations'" FullSelectorArgument="&lt;webctrl idx='15' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="514ab699-cc7d-40e7-acb8-e78282150987" InformativeScreenshot="2b815a1490a12492885789a09733572f.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="512, 330, 170, 20" FriendlyName="'Occupation'" FullSelectorArgument="&lt;webctrl idx='18' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Occupation' check:innerText='Occupation' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK4AAAAYCAYAAABjn8aGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHrSURBVHhe7ZeLbQIxEAVTLR1QAh3QASVQA1VQzEUPMafHshCIBDmHN9KKw15/Tjt2yNcUwoBE3DAkETcMScQNQxJxw5BE3DAkETcMyUeJezwep9VqdYrdbnduDSNyJa4KSnGJ/X5/7h2HzWZz2rs+IeL+Hy7EXa/Xp6Jut9tzSy/ACIy67/AYs7h+0zp+S/nNq2faCb/Fap8ORTfX4XCY29TvOTpAPCuUW8d4aKyo47yfZ3+Xmu+y+1o1j/XC+5nF7W5boI+CUkC1g6RVeKERTQX+jbisVw+Vxvg+u0PX3bjd+uQxH3PxblVcwfv73OG9zOLW4jgUt8qHmE4VwXlWXHJ+WrPrZx8uV5371rze5vsjpzso4b08La4KTq4KX6FPxa1UcYSLof4uR9Q234cHcj0irs/h70Kb3iHiLpOnfyrcKjbQ90px+VOtED4m4n4GT/9z1kniIMwrfyrUQ9btCbnvievf9Qy0aS7fH3NH3L9nFld0t67fttBJIRHqDeUyaB4+1adcwVzkV7k8h/U4HHxXHmOqXKwr7s3NO9dxEXeZXIgrvCgERXa6PLUJF4ToRFDcE9fDBRTeh8gK5BLerujEFb4HBQdCRNxlciXuX3NLrhCciBuGJOKGIVmcuCE8QsQNQxJxw4BM0zdspE3G+Qen0wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="x:String">[fakeRole]</OutArgument>
+                              </uix:NGetText.Text>
+                            </uix:NGetText>
+                            <Assign sap:VirtualizedContainerService.HintSize="431,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[fakeEmail]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[fakeEmail.Split(" "c)(0)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{fakeName, fakeEmail, fakePhoneNumber, fakeAddress, fakeCompanyName, fakeRole}]" DataTable="[excelDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="431,185" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{randName, randGender, randCountry}]" DataTable="[baseValuesDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="431,185" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                            <Assign sap:VirtualizedContainerService.HintSize="431,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[convertednumOfPersons]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[convertednumOfPersons - 1]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ui:InterruptibleDoWhile.Body>
+                        <ui:InterruptibleDoWhile.Condition>
+                          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="convertednumOfPersons &gt; 0" />
+                        </ui:InterruptibleDoWhile.Condition>
+                      </ui:InterruptibleDoWhile>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="0, 78, 1366, 650" BrowserType="IE" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPlSURBVGhD7ZnbSxRhGMYLwvPmeiK8UIM06Kq/wCsDk4qCuinzFP5DgRRJ90GoBNFNZgaeD+vu6h5a1/V8yA4XqRmi7tvzDA1sMs5+uzPuauzAD2Fwv/f5zXzfN+/OnvvhKJOzjLLA9xRjlMEIUwEO9A18BV/ABlh3lMraCcGxWYO1WJO148mYCnCATbBWUCrzuUUSynFKIKdQ/MBnMxyTY7MGa62iJmszg1E2HVMBXgWGjxSVS6SuQUL3Hoj/7n2ZOSE4NmtEbjRoNSnBDEbZdI4V4K3jrVzILxF/ZbXsuD0S3d+Xw729E4U1fnmnxV9Vo9VmBrNpZCrA+TibXywuCGz7/JKqYycQFBcEWJsZkhbgovqMQUYqrshWCgW2ITBSWSNB1GYGSwIBDDIEgZ8pFNiCwBDueiDPJoHBjEBih+1TKNUCti7ihASiUVkfGZW5112y2NUtS109spwAK2Cj542sPe2QmfIq69toogLRw0Ppa2qVV9kOeVdQLL2gr6BEmU9g2FEiHtQN4yG2ir+WHmTJCAw/bpX3WQUygc/N8CGIUKoEwSxY+BveUiuRrIALd2A4+6KEEGQFQYyatuNgPduauWQF3E1tMg6BeYRnGAZJBD10vOA6tgtMYAoNYA1wSnAqLCmyDHgXdOm0CQw0tsjbC/kymOuUibwicSkwBbwgiAfXAsQpoiphrwC20ZXePgk/75TFFy9lBawqst75UjbxN1JbJ/OQibf/69gqYPXgHQy3tmtfbLgLxduByKkT8EPAm12orYkzKTANARd2MS5srgOjbLGcOgEvBCbPusCZvgM+CLghkLY1wK2UQZLh8OBAQi3t2muWtOxCDO/ueCYfG5tluLlNxpqfyLgCk8ADgsB/7brMoSZrM4NRtljsFcBV7H/YJN3ns+VDlkNrKYYUYPPH/onbZxj19E40LQJj6IX6Ed6LVpqt8RzmcjwigM0fFy7bCJU2Wsd2gSl0o2O4mgzFzzOMKtx1GJy1Va4+sV3AAwHu44sQUNkGrXJiApwOqtPAChmB2CMjkAQZgdgjI5AE/78A3xCr/j5AAS8E9H4+7QJ8MxCCwFhFtdIvNBTwQcADAdV+3iqmAnzFx9bWQwHXlPYj3MHuruwfgecOdn/L/s6OhB61aD+ZqvbzVjlWgLDB4pUMOi+Jr7ZOpm7ekdH62zJUf+sfRsAEzs8A/+WrEkEnqvpexyqmAryCDMLGLJjrFDeu7DgYxRSJhd2nC+f5TYp3LJF+3iqmAgzAjpISDMWFyfed7N2PQkm+jebCZ/hUTB9iKkAoQRiIMkTv33X084T/p3/GaDy7iStwuimTP2f2Ock90e+dAAAAAElFTkSuQmCC" InformativeScreenshot="978c67adabdd3d7a643de763bd88cc1e.png" Selector="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" Url="https://www.fakenamegenerator.com/" />
+                  </uix:NApplicationCard.TargetApp>
+                </uix:NApplicationCard>
+              </Sequence>
+              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[file]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">["Fake_Persons_List_"+CurrentDate+".xlsx"]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[excelDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Identities" WorkbookPath="[&quot;Data\&quot; + file]" />
+              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[baseValuesDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="BaseValues" WorkbookPath="[&quot;Data\&quot; + file]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:WriteRange>
+            </Sequence>
+          </If.Then>
+          <If.Else>
+            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </If.Else>
+        </If>
+      </TryCatch.Finally>
+    </TryCatch>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Fake Persons Generated. Continuing with phase 2&quot;]" />
+    <If Condition="[isCorrect]" sap:VirtualizedContainerService.HintSize="484,421" sap2010:WorkflowViewState.IdRef="If_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="242,234" sap2010:WorkflowViewState.IdRef="Sequence_15">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="sd:DataTable" Name="rpaDT" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[rpaDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Identities" WorkbookPath="[&quot;Data\&quot; + file]" />
+          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser IE: Rpa Challenge" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="Simulate" ScopeGuid="ad92649f-4298-4350-aabe-c21022930ba0" Version="V1">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,2252" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[rpaDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,2158" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,2042" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Role in Company'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="ad92649f-4298-4350-aabe-c21022930ba0" Text="[CurrentRow(&quot;Role In Company&quot;).ToString]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpachallenge.com/" DesignTimeRectangle="449, 136, 259, 46" ElementType="InputBox" FriendlyName="'INPUT qNDuM'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="a5f543f5-fd30-48b3-81af-e7256100a83f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAyCAYAAABRax4NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVHhe7dYxDQAxEASx8AdxVO+bV6oJA1taCqM9CxDEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkASByCJA5DEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkC6cZgZM7O/CJ4D8CAOQNj9AJc4kAXuvr6oAAAAAElFTkSuQmCC" InformativeScreenshot="79fac326399c115f03f043e51b13d2e5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="449, 116, 102, 18" ElementType="Text" FriendlyName="'Role in Company'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Role in Company' check:innerText='Role in Company' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAAWCAYAAAAowQktAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALPSURBVGhD7dY9TiNBEAXgvf8hnJAQkBAQkDhxQOKEjIzQuS8wq8/iWUVvz9hYAjSrflJreqb+61W3/WcaWAUGUSvBIGolGEStBIOoleBXiToejx+7gUs4E3U4HKa3t7fz8n4tdrvdaX0F7+/v02azOT1vxevr6ynuy8vLl/JdI85EKfjx8fHc9Pv7+2m/339IlxGbr8JA3ALkPjw8nPPdbrfT3d3dibD/FZ+Iqs3WDMUHrilyzdGYOsGtLQKen59Pupo3d8VVG3sx2T09PS0OCZJaefKt5DtxPX9y905ORicnW76pseZNn13kbNpTTCf+5OE9+Xha1X/sq14gt/ptlihOXE0gYU0gZ+zpxKW4aisA3QSXuMb2EP9grwD21UcLsjl/FfKhF39pLsiLf7mlnrzb9/Jm7z3y2KQHGk8u58QjpwfRj71c9BDYtDXRrYPwiahMQpohOHimyIC+YrK3gB37it43aImqiUlesS3E6X2vMFitvwybxqoxTQrU0tZYiRAz/QjSg7l4YqQvnq1/crkkt9j3av/nN0oygtb73vcEDATgHMgiZ4sYNln0WnugG9Q98M+2Ra6OJbBt/QE79j3ftYaADt12H8TPUrz4vOQfiRkE5Le3SffqY1TZZ9gGyamDaouUNKOuOm3BLUTxI4YpbJG4TkGvcTnZPd+1hqA20r5tXiZ/KV58XvLPR05Ve9qhS1SOYpx4xgmQzyXhmSsRagItbiEKTJ741SeSahy29arSVHK593zXGoLaSHsNjH9P7yFPPnW4fVdT7cuSf+DDt1YPZv9M2DPM5KZQyXm2uvVdg+iwp9/7fYJbiQLxxGBnGY78noC82dOx7CO/lSjDoB5LzDoIfCceOZn3+LzkH0Jub6jPRA0so23qd8Ag1NuoYhB1JX6CqKXbZxB1Jb6bKL4RNYdB1JXwG5Tf69/AIGolGEStBIOoVWCa/gLtkQt+lwHHiAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Phone Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="ad92649f-4298-4350-aabe-c21022930ba0" Text="[CurrentRow(&quot;Phone Number&quot;).ToString]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpachallenge.com/" DesignTimeRectangle="730, 136, 259, 46" ElementType="InputBox" FriendlyName="'INPUT OYzxJ'" FullSelectorArgument="&lt;webctrl id='OYzxJ' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='OYzxJ' tag='INPUT' type='text' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="c305ca22-128e-423e-8d43-6ba2364bc8f0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAyCAYAAABRax4NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVHhe7dYxDQAxEASx8AdxVO+bV6oJA1taCqM9CxDEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkASByCJA5DEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkC6cZgZM7O/CJ4D8CAOQNj9AJc4kAXuvr6oAAAAAElFTkSuQmCC" InformativeScreenshot="0bd233864b05a031bbd74ca291354798.png" IsResponsive="True" ScopeSelectorArgument="&lt;html title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="730, 116, 89, 18" ElementType="Text" FriendlyName="'Phone Number'" FullSelectorArgument="&lt;webctrl aaname='Phone Number' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Phone Number' tag='LABEL' type='' class='' check:innerText='Phone Number' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAAWCAYAAACi7pBsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJWSURBVGhD7dWtkiIxFIbhvf+LwIxBYBAjMBgEBoPDIfHcQG89LB97yDZMbTFDm7xVKdI5nfPz5aT5NXTeThd9ArroE9BFn4Au+gR00SfgTvTD4XA3KrPZ7DqbjtPpNGy32+vTX3a73cX2EyyXy3+0eJU70Qm72WwuY7VaDYvFYjifzzfb1CheHvv9/rryh58QJrxF9Mrn5+ets9iOx+PlMCSiuyoOx2Gxrdfru86TtMHXmN3e2Ph/VKT1+Xw+fHx83JoBVRg5tF1vDdbl7dDUJpaaUHMb813za/3zyZ9RdWnjhaeiC5CE2QTlwFB4AkjSs3cl6Jc4KchztfPLHtwoSbHx6d22m8EuB35qEREG8sw8pC7rfCdW8vKc3MzlE/j2HHv2pDaHxB5dzK0h8ZJzePh5sdGGnCpbPWHicAbvErLCR4Qxb+1El1QSrYytwfuJmULxP6LXw4Yc29yqqHxHxJDaNBvf9WbUtbF4eCi661RFTuKhCuDXngq75BGflQhlPd2QQdA2HmpMotinuPiCfZmH+Kr7w7Pc2nmIH798m9eRHPJey9PPS6W1VYe5npXarc8Kc7jeS5J1tFirRfApdnzBQdS9GudV0et3GrnlDr4KXEc6vY2HbxHdXLG5GQISMsU8K8y79uY6g5DtlcZYEeJUodvPBT+viu4Tkdr8es5BsGuckCbCWDx8i+jIH6CE/NZCviqM4PZFQKI5jJaxImq3IZ8bfgwivCo6H/Iz+KoNkXixm6eBxuLhTvTOe+iiT0AXfQK66BPQRZ+ALvoEdNHfzjD8BoBFvAh/MWcyAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'First Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="ad92649f-4298-4350-aabe-c21022930ba0" Text="[CurrentRow(&quot;Full Names&quot;).ToString.Split(&quot; &quot;c).First]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpachallenge.com/" DesignTimeRectangle="449, 224, 259, 46" ElementType="InputBox" FriendlyName="'INPUT dPkQQ'" FullSelectorArgument="&lt;webctrl id='dPkQQ' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dPkQQ' tag='INPUT' type='text' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="0ad60fe9-af43-4548-afd0-6c2be44c5ca9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAyCAYAAABRax4NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVHhe7dYxDQAxEASx8AdxVO+bV6oJA1taCqM9CxDEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkASByCJA5DEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkC6cZgZM7O/CJ4D8CAOQNj9AJc4kAXuvr6oAAAAAElFTkSuQmCC" InformativeScreenshot="36677214b87e70a7d4d2f1f388d28f6e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="449, 205, 63, 18" ElementType="Text" FriendlyName="'First Name'" FullSelectorArgument="&lt;webctrl aaname='First Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='First Name' tag='LABEL' type='' class='' check:innerText='First Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAWCAYAAACbiSE3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHwSURBVFhH7ZSxbgIxEETz/x9BQ0NBQ0FBQ0NBQ0NHR0nPD1z0LrzL3OoCukRKpMgjWT6v17O74/W9dQ0DmhiBJkagiRF4Kcb9fn98/X8MYtxut+5yuYwGQmy3237MBXyMKWA/Ho+P1SdOp9OXZ34DgxiHw6HbbDb97LCg7yQoxxQQerFYdOfz+WH5APHZ+yuMxJhK3i7Jb251v98Ptt1u13cPN6uNwhS3isn+arXqlsvl6BlWMeCDF37srN3n+3q99nlwzk7DZj5VbPLQn7nm9VKMtDNTAMFsadYEZVCgdnwsov53sClUPsEUg2TX63XPBzd7xDIX1sZjH1+4sLPGbm7AXDlPDGtJQUZiQA4ZAzLtJsBMgQJSzlgsa4vJcxX4EANQhAljYw8+nlEmio1YcmaOgI6oZ+gWxUZcRqLaRmJ4kwxJs6j8FpChMEEzuSlfkWJQBOcpVjEYFFbBvpz6JuqZjMOcl51rMfuZTPkAW9W3+8w3kwT42eLsecsV8Mupb+KZGPDnZTuIJX4kBp2Qz4Qu8RnhV9tSZJKCQukQ9lznkyQWxRp/rhh8Z64+O58o+HFn+ExIHnKVZmZNgjXpTFLYDfqyxgdueIjD2vhzxQAICp+8tZZBjIYmxghNjEATI9DECDQxAk2MQBNjQNe9A1JFIBYN4KNFAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="ad92649f-4298-4350-aabe-c21022930ba0" Text="[CurrentRow(&quot;Address&quot;).ToString]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpachallenge.com/" DesignTimeRectangle="730, 224, 259, 46" ElementType="InputBox" FriendlyName="'INPUT efhZN'" FullSelectorArgument="&lt;webctrl id='efhZN' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='efhZN' tag='INPUT' type='text' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="64f3bc6a-38ee-47bf-b953-d9de4649c389" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAyCAYAAABRax4NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVHhe7dYxDQAxEASx8AdxVO+bV6oJA1taCqM9CxDEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkASByCJA5DEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkC6cZgZM7O/CJ4D8CAOQNj9AJc4kAXuvr6oAAAAAElFTkSuQmCC" InformativeScreenshot="6d0bff40afc34382b4b26d4182134f01.png" IsResponsive="True" ScopeSelectorArgument="&lt;html title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="730, 205, 49, 18" ElementType="Text" FriendlyName="'Address'" FullSelectorArgument="&lt;webctrl aaname='Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Address' tag='LABEL' type='' class='' check:innerText='Address' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADUAAAAWCAYAAABg3tToAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGWSURBVFhH7dStkgIxEATge/+HwGAQGAQCg0FgMDgcEs8L5OrbormQ3WIxJ5barkqFZP66J7P8lC/ELGoqmEVNBYOirtdrtz7BZrMph8PhcepjzP4fGBS1Wq3Kcrl8nN5jEqIul0snar1el9Pp9Lj9g7vtdlt2u13n25J+Z3e2jsdj2e/33d39fu/O/BIT3G63zo+ND1+oY9j51eiJkpijIORquI/Y8/ncJfWiIT1mtzurkYbxV4cYd+xiQXPxSHPEgT0NUJNfjZ4oSSnXjcVi8dId57or7iREdswO9hAD5ImqUd/Jl29b3jQiLxckf/AiSlBdRAcTrCuKtFBA0jE72GsCfmsinyz1kycv5x6PNJjQfCKj40cE5xRIIEg0RJoduTE7tKIQZdeQdtWQG7f2cyAmjanxFJXx8fx18owjIFCPj06KCdExeytKTfkzYoB4ui82Nrw0GeyZoKGxf4ri1HYCkAwRgV4QEYkVd/7U3ooCpDMR4tTLmNXjZ3eGNkadGr0/im/ALGoqmEVNBbOoqeALRZXyC4HAc1uDu5B4AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Company Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="ad92649f-4298-4350-aabe-c21022930ba0" Text="[CurrentRow(&quot;Company Name&quot;).ToString]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpachallenge.com/" DesignTimeRectangle="449, 313, 259, 46" ElementType="InputBox" FriendlyName="'INPUT sxO1N'" FullSelectorArgument="&lt;webctrl id='sxO1N' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sxO1N' tag='INPUT' type='text' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="e1f3954a-9472-4706-9cb1-7d5ef29a6355" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAyCAYAAABRax4NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVHhe7dYxDQAxEASx8AdxVO+bV6oJA1taCqM9CxDEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkASByCJA5DEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkC6cZgZM7O/CJ4D8CAOQNj9AJc4kAXuvr6oAAAAAElFTkSuQmCC" InformativeScreenshot="c22ed212d436e21ddcaa033ac7aa42bc.png" IsResponsive="True" ScopeSelectorArgument="&lt;html title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="449, 293, 99, 18" ElementType="Text" FriendlyName="'Company Name'" FullSelectorArgument="&lt;webctrl aaname='Company Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Company Name' tag='LABEL' type='' class='' check:innerText='Company Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGcAAAAWCAYAAADdP4KdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKzSURBVGhD7daxUiNBDATQ+/+PcEJC4ISAgITEgRMnZGSEzvmBvXo+eksW9pq7qsOLa7tqi9nRSGqptWN+DQtmi0WcGWMRZ8ZYxJkxFnFmjEWcGeOTOPv9fthut8NmsxleXl4+dm8bqbljt9sdbNfCkTgEubu7G56fnw/rh4eHYb1eX5Xgd+D19XVYrVafhlH9bNfCKA5ihHh/f//Y+YOnp6cDyYA9whGxCqcQjymM3XmPtb06oXxN59vb25jHewXfGo+P/MlrHf/Hx8cj/3ouEKvv4Xx/f38YzFq/nBHnEo/U0eus3Lr4Yqdu52tuGMUhzKVrjLMCkBLYX0UhAN6rHSFxJUc+A6AASFPY2WJHOPCewsTwbsrTNOvqL38EEie5AE/5OsQSA2+5AnvJc4mHs2LXOp0PN/u4WUPlKkZ6VTGKUxOdg0Jr46AWZN3ttVmgQfZAPnnrxGQAnFNAb6b9Lk79EuTSEHCm+uOGY4dz8dGgNDDifIWHs73Ozs3XkV7VPEHfG8XRkCQ6BwR6cXzSbLZuT4EVSIP9NKUiPmKdsndxKnpMTU3BePYrDapPhseQ/A2PnK2Y4sZGDO955K39G8U5N1XIZp/q/YzC8zmydfsUaft9IsEeW+74Ck2rTZlqAGRaTXX/qoPuowY+4f4VHjlbMcWNEOLaq08dnlEcm3EI7Gl8/Y2o04cgewT5F3Gsq491BAunel1ocG3KVAMgTTzFI+g+oC652b7CY6rOoOZRZ644yBeb3sIoDjjAWVCPJvVmIygIm7+9sf38FOmQJb5YiYtHkPs+j/y1KVMNCDSS7zmc8sGh5rnEY6rOoOdJ3QZBzPp7A0fifDdONeV/wITWG+Gn4ObFcU2YYNfbT8PNi+OaPfePwNxxVXFMc/19WXCMq4qzYBqLODPGIs5sMQy/AQgaBtsEgBobAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="ad92649f-4298-4350-aabe-c21022930ba0" Text="[CurrentRow(&quot;Email&quot;).ToString]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpachallenge.com/" DesignTimeRectangle="730, 313, 259, 46" ElementType="InputBox" FriendlyName="'INPUT 01VL9'" FullSelectorArgument="&lt;webctrl id='01VL9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='01VL9' tag='INPUT' type='text' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="f6e33e6e-3bd7-4501-8d2f-96a66717fb0d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAyCAYAAABRax4NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVHhe7dYxDQAxEASx8AdxVO+bV6oJA1taCqM9CxDEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkASByCJA5DEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkC6cZgZM7O/CJ4D8CAOQNj9AJc4kAXuvr6oAAAAAElFTkSuQmCC" InformativeScreenshot="f32b74eb153d320954ca3b3b37d4a297.png" IsResponsive="True" ScopeSelectorArgument="&lt;html title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="730, 293, 33, 18" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl aaname='Email' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email' tag='LABEL' type='' class='' check:innerText='Email' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAWCAYAAABHcFUAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVEhL7ZOrDoQwEEX3/z8Cg0FgEAgMBoHB4HBIPD/QzZlwk3YXUZrNguhJGvqcOX3wcg8kS8WSpWK5TWrf96P2TSA1DENQlmU5Rn7LOI6uLEurk6NpGquLQKooir9IcUrrulo9SuqMaZosSN/3FoCdAn1d17m2bd08z9Yntm0L5jOXjWqMmJAsxaKqqiwQyeu6NhH6adPPdUiMpLSRIikyrFd8XyRKigkqgrp2BuyauSQXnAaigAwn6MN4shSTVASL/DYogfCD89VVCcaTpc64KsWJfUpxtbdKIcCb0h/G38Y7TJbyi3Z7VQpYixgyPPLkN/UUslQsWSqWLBWHc28hKj1dHF31cAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Last Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="ad92649f-4298-4350-aabe-c21022930ba0" Text="[CurrentRow(&quot;Full Names&quot;).ToString.Split(&quot; &quot;c).Last]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpachallenge.com/" DesignTimeRectangle="449, 401, 259, 46" ElementType="InputBox" FriendlyName="'INPUT ZtrPp'" FullSelectorArgument="&lt;webctrl id='ZtrPp' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZtrPp' tag='INPUT' type='text' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="6e9dfb61-d241-401e-af37-93fc2c00efad" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAyCAYAAABRax4NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVHhe7dYxDQAxEASx8AdxVO+bV6oJA1taCqM9CxDEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkASByCJA5DEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgASRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkC6cZgZM7O/CJ4D8CAOQNj9AJc4kAXuvr6oAAAAAElFTkSuQmCC" InformativeScreenshot="4b0427648ff7b95d5c15ed3eaf52320f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="449, 382, 63, 18" ElementType="Text" FriendlyName="'Last Name'" FullSelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' type='' class='' check:innerText='Last Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAWCAYAAACbiSE3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHkSURBVFhH7dSxbioxEIXhvP9D0NBQ0FBQ0NBQ0NDQ0VHS8wJ79a04eye+m010EymNf8lid2zPnDn28jZ0JroZhW5GoZtR6GYUJjMej8c4for7/T48n8/X23tut9twvV5fb385nU6vp99hMoOQnxSz2+3GpudQZ71e/2P+arV6Pf0On5pB8PF4HJs7n8/jidd1l8tl2O/3w+FwmJoX22w2Y2wup5h5OSvVDLdKPWvUp8O+GKgGLVUbxNSlqb199JnL+vbmLpqhsBNUUKI0EdEEbbfbcc6zuD0EiSs4dztSqzaBaob9aSh1zCefvbSYsybrxbOH9hji17u4HNbaU1k0gwmcrBAf0dZLGhTKyRE1ZwRSy1oNZU/yEi5eYXBrhnoh88kFWqNP4zEmtLFFMxRsY8REtGuWE6qfCb5iBgi2FtXkxCqtGW3+7A/ma27Ne89wU2p/i2ZwtY1xsi3KlFxLJ4Q5saGtZW29cdWgoMZ3zKBNXrE66k1aNCPfWRokiLspmj+qYC5Xl4j2Woa2Vj6X5PWe7zuo9R0z1Kta9aTGh2ZIlhGxfm3SKMH1BOtnYngWQ25KKxByJn+oecHI5DXkM/+/ZsB/YO2lPazJjE434x3djEI3o9DNKHQzCt2MQjdjYhj+ABpfIvKfHjRhAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NClick ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad92649f-4298-4350-aabe-c21022930ba0" Version="V1">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpachallenge.com/" DesignTimeRectangle="437, 467, 116, 36" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn uiColorButton' aaname='Submit' check:text='Submit' /&gt;" Guid="7f12aa59-4d78-488e-ab58-f12215d9a63e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHgAAAAoCAYAAAA16j4lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANUSURBVHhe7Zy9bhNBEMfvEfIG8AY8AYg3gI4iNZSIOqKioEKioKSkSmFZFESyAIkOYWGjpANHoUBCKLKdyB+SHeduuP94ZzW3XkeCRIpvNSv95Ozsx0Xzu909F+eMXCmKgvI8r3B+fm7UgNAbXAKUTMSi42KxoLOzM5rP58xsNjNqgPiCOzgU6XCb4Q8O9r5S8eQWFfczo848ukmLb+/ZKdxmsA37xfN78QFG/djeYqdwm8H0dDql4undeGejlozHY17FGUyfnp6a4MQ4OTnhVcyC+/2+CU4MOGXBeAozwekBp3BrghPFBCeOCU4cE5w4JjhxTHDibJ7gndtEn94QfXnLFC8eVNtfP17GdcxB715xu4+5vppKuwPjeGwQ16z0wdyqHl5H48dcA5sluJRJsylR/9cyOfhECRNZlso4afv9o5JQ7ov5EBdcfWVcGS8e3qjEPbjpUNQ4nlvXMQeQ/xmfLiZ9roONEkw/91cSwjEkX+r/KjhMMG4iFH3TYByKGquRa+q5onMDrOyyxHaK62CzBCPR+x+ibYIkO9qG8UrSOglcdD+MG/UZ3Y8pV7XeBSRugv8D+v55mUx91gVcVjCf79gRym3Xx9w4lhxcG3WOB3PF5mZM8AVgtUAyCkRjew4TjsSWRcd8W0xwWDDv7rPoOKY8OyttTjq3meCrAxK87PLTx5003de3xQRDGJLt4NiaFSzbschhsajLXCb46uEkI2FOCItHPejHbW4r9fU1EvgJV9806sbgm6rcOVbiwVzr5jbBF8DJdQn1SMLk+7B7Cl5JoHyVUdvvOgkszkn0dbmuzCM3lvvqZIKvAE4aipy7SDZWW3guQgjiIhNJjfXDfIgh2Q5+yNLXQD8tGHWc/Sjh0WCCLw8nDg9CUpBEdV4y+mFMClakW20CzxUWbOOl5Eq/QLCXpK5rgo2NxAQnjglOHBOcOCY4cUxw4pjgxDHBiWOCE8cEJ44XbC+fpQmc+rcLh8Mh5Tt3oh2NGrK9RYPBYCkYLwnjXdI/H3fjnY16UcodNl6yU34BHK/5TyYTOjo6ok6nQ61Wi5rNJjUaDaNm7O3tUbvdpsPDQxqNRsufcMAPdcg53Ov16ODggLrdLss26gXcweHx8TE/YOV5Tn8BOoj9iFpg7SAAAAAASUVORK5CYII=" InformativeScreenshot="02764e56cfc93dc7f0f1a091072369af.png" ScopeSelectorArgument="&lt;html title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 78, 1366, 650" BrowserType="IE" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAn6SURBVFhHtZcJUJPXFsc/Vls79i1QFcIiCtrWpVrtPK1dLD6nRbv42mqt1FoVZQ8i1lqk2lr0uQCibEIB2cUAgggWrEARHKTsCSDKjgQQCEvIRkjyfyfhm+F1lM57M/Y/85/JJPf7fueec++5N8zTFAA9dHwyS/PQdjN6TM6g77lEDBjlodcoT9Nm/JO8xPijLQxjyA5/ehqqzjKYaN24Fv12IRib0Yo+phcPmB5UMd0o1fkhyhgh7jI9mkL9BB8b/b9QIHrs4/+f5h2+scDW7+c9y/x/id0UXpD9Q0Z612DHUals6HWNvNtcLW8wUCqL9aWaHL3WkWijczV+hi7BbxtsCnrTwGEoycgfRYxoJMzAjQKYyb7yfxOB357veyP1jdCyepecGlFI8c9KQW2EWq24ArXiCFR9dlCV6wmVaYZVIac3F6928ota5eD86WeGhgsJZk3mkC0UuUbBmmwmmT7PJeuzr59eNt/emEPwqHdialtdq4el5+81Iu9uBFTyTECTBCgcQekGbjC4m7FRGJydCPdbjVif3iJZ9mNBu5UXL2a+R5I5wfTIBv28Gfa4xWTRZyuyEYt5sgi+Yv6Rmze3FPYO+vcD8a18VFWH0VrLJ4cAQyuACgaaRH3kZHog4NfbONYkgtcDJXZUj+H9wiG8GMofsPTOKLD0urJE+05x3qylmkK9MIJrgzLWgZ4kLXzh0YI7u2tHxedGAV5bDVoF5wh8g+wPdJsABQweJc9EdJo//l1eh6BBJfxFwOFegNuuxld1MnxQPIxFkfdHLblplfMP8JYqS59fNZFv6EpwU7IBi/u9CG5OM8/fXTsmDhcDmW2/obuZZqyb+TdAizGQy6D5sjUCsxJwmt+OC30KBIvUCKJgT1EQvhSEZ7sKO+rk2Fg0BNvwxlFrr9TCzLQNr43wjNf84eyp5hHbbvcOhoxocLWtAgNtWvhNqjkXaKJ6ZzMoi7FVvOsf98B6P6/S6sDVilWnbjVuSxMIf2yRKANEGpykIL7tAVybVfi8Wor1+QOwOV02aO2ZFF7tbzz9DiD4O+vjBe2nh9TgddVD2BRI8FsEdwfuETyTQdYZy4FVX0f5WPtcXcg+xlh5py+08k7ba7U/rfjzzPt9ZwY1OE5BHOwG9jQpsLl0FP/I6IHtoevtdu5Rb7GPPa55h3NTPQQSeWJ3G5rrThG8gHxwEp7BgHfGTrj4YIIFO/wxWXrxZtOCu76/vE9yegj47hHg0abCdloP62+KYBNcI7F0i0tlh/9eBF+xLrKyObjrESoqztCstTU/QTU31KU9L2yx1NbnigM7fFpZclPt7UNut53q1+AEZeFAtxq7GhT4oHQEK64IscCL12yxL+ZldviU5n2T47q7oHsoryEbalUGwS8CXX/VLbiOlL9jnV9Eg5XP1b+xw6eVpedlI+v9qbUBjyZwZnhyLbg8GMfHv41hdVYf7I780m/hHLuHHT4lCiD83N1fldL2C9Co04CBBVR+BgOxMxBTnIK1oeWyF7/LqbHyzqikmldSvass9/OqKeVa19DMawheo4W/FlA6HtivQhDtIm0ZXKkM22qkWJc3gHlnKyXmzrEhLHZKdt9k5VeUHteo5LmA5F3QIQJ5jD4Srp9C7MgoEjRAnBqIVZGVjzua/JMCiFFoECXVIIS2pDaAYwO0DqgvbOfTOrglwoKwe+Pm+2JyWOyUNp+NrpINxlJv9wXqadHFMEhP90Rk3wASCZ6kNRXmMbO/JVBgWseNa4OgAkqBwJHJADw7JgP4pzaAyBaV+d7oEhY7peISp0GZKAaqzrm6ut+9tBjBfAESJjS62f9RANoAdQFMTAagzUS4BAigNeCnzYB2J9RKqB+IqCk1qcycoopZ7KS6+QeWiofXKmT926Aq0cNQtBGCMyMQOSpHHL00ngBvhFXKX/K7LtDVXFtv7mVdzS08UsjJtRbuSeTEOo5bQh3HNZ6vs0ucgON8SUA1r6e019PMGwjeYLb7oheLnrzJPORvC5IMLpZJ75lClaKHyCR3+FY0IkSqQgxlIFqmxiLfawIL7hUT9rGnJ/SfeLazyb5R2vHMqPTOTE1xtA24RVU40tRHvX0CkbSofpKq8VZoSYuFx+U32ceentSdDmsw+oJw4r5B/1jac+oDVyKwu6YPh1qGcZJOuAtjakRSJrhlwlGOW3IKxz35D89xjsul5Rzn2Ivm+2LTzPbGFFHKq+buutgw58uwRtPt52/P/uJ89Jwd55exwxlG83DVXvTq7mzC4mBz4br4EuXWsl54No3gaI8CZ0dVCKMMhA1PYFN8ZbeZa+LX5m6JT7zNUL2XErjEKff+2HfNMhxtU8D3gRzedWI4lQzi9QtVcoJfYodPCn2cE2inAG4ywnCfxaFLj1/rfa+oBzv5QzjYIcGP/UoEilUIpUwE9ys0DrHl3WbO8cnkdWYucabmznEzzPcR2Dl2P8246surgmEt+FvtOUDb74sGGTb8SveClG5Yuab0zvni3PsselLoeTacjlkhbb1WLkd/vdWe8OQV8Q2SD0v7sYs/QkHI4D84QXtajQtiNUKpLNzSLvGawF865ntfbuS4xjW8ciyr5ZPEyoGjfJHqaOe47lLiRs3HUaDAhttivJzeA5PD+SOzHYOSWeyU0GMciQZGqM7Qz92qz6xZbr9viQU3rWQlr1nxYekgvmoYhXenHMeot58cVuMsBRI4rEJgP5WnS4ZTnRKcbJPi+04l/HrVOERwl04NttMBtOHOGJZlDuD5H+5KTT8L+G329gArFjsltM08SZ1PqEw1iN+ix7xKt5W/0B5fyeFm1L2a1iJ3uCOCI18Ml3Y5fIRK6u0q/EC3n+PaM5+1H6X7EJnbo8GuVhU+5SuwvkSMJdmP8PyJMonJJ2cbCL6aRf5eqhoTR20AqmsG6QR/hTxL+z01mJVm7smlSy7Vj24oEeGjajG+bJTBqW0crp0T8OhWkdVw6VLDSVvrFhW21I/DoUKG1wtHYMfrhalvwajp1sBKgr+mgz1JDVEmcyiAVvrT8OD4Cv212gywPzE23JS5Fm6JCS/53+xeld4uty8bwcbKMXxEF4x/8aX4mC/HZoEcm6plsC+TYnXhMF661g/zEMG4pQfv0RzHoIzZnwfYsK97sghoIM4x3olipkudq5/TGGy8oSNuBmeiZNYaTfnMTagwWraIG/UetdVca5+0tsXBZaLlvDb58oyO8ZV0y1l+YxCLEtsn5l+sl9v4/TxkuS/+Ia30nNmOgVsJ/uSb73+LAtD+aXim/Htj+4lsg0uafL0CFOllaooMQuWZhjtveRra7pipp2s+HOeYl2mfu1NfT7HmphSY7Ymkvh7ROPersNy5O0MSaI97Enz6dE8nNghj8gvkeawtydPf3/8MEUz3F4psqP3Mfv0niWH+A97GAIHbLcG+AAAAAElFTkSuQmCC" InformativeScreenshot="0eb6cf505359732e67fe233f9aa30f61.png" Selector="&lt;html title='Rpa Challenge' /&gt;" Url="https://www.rpachallenge.com/" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>
