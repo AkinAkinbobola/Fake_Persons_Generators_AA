@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="701,851" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="733,5862" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
       <x:String>System.Activities</x:String>
@@ -73,29 +73,25 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
-      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="526,786" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="743,5797" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="numOfPersons" />
       <Variable x:TypeArguments="x:Int32" Name="convertednumOfPersons" />
-      <Variable x:TypeArguments="x:Boolean" Name="isCorrect">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Boolean" Value="True" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="isCorrect" />
       <Variable x:TypeArguments="x:String" Name="fakeName" />
       <Variable x:TypeArguments="x:String" Name="fakeEmail" />
       <Variable x:TypeArguments="x:String" Name="fakePhoneNumber" />
@@ -106,20 +102,16 @@
       <Variable x:TypeArguments="x:String" Name="randGender" />
       <Variable x:TypeArguments="x:String" Name="randName" />
       <Variable x:TypeArguments="x:String" Name="randCountry" />
-      <Variable x:TypeArguments="x:String" Name="CurrentDate">
-        <Variable.Default>
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Now.ToString(&quot;dd-MM-yyyy&quot;)" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="[Now.ToString(&quot;dd-MM-yyyy&quot;)]" Name="CurrentDate" />
       <Variable x:TypeArguments="x:String" Name="file" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the number of persons: " Title="Fake Persons Generator">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="701,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the number of persons: " Title="Fake Persons Generator">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[numOfPersons]</OutArgument>
       </ui:InputDialog.Result>
@@ -130,11 +122,11 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
-    <TryCatch DisplayName="Phase 1" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Phase 1" sap:VirtualizedContainerService.HintSize="701,4842" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
@@ -148,7 +140,7 @@
         </Assign>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="488,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="667,135" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -180,57 +172,45 @@
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <If Condition="[isCorrect]" sap:VirtualizedContainerService.HintSize="484,873" sap2010:WorkflowViewState.IdRef="If_1">
+        <If Condition="[isCorrect]" sap:VirtualizedContainerService.HintSize="663,4397" sap2010:WorkflowViewState.IdRef="If_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <If.Then>
-            <Sequence sap:VirtualizedContainerService.HintSize="376,686" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence sap:VirtualizedContainerService.HintSize="627,4210" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="baseValuesDT" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:BuildDataTable DataTable="[excelDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Full_x0020_Names&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Company_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Role_x0020_In_x0020_Company&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-              <ui:BuildDataTable DataTable="[baseValuesDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Name_x0020_Set&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Gender&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Country&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <ui:BuildDataTable DataTable="[excelDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="585,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Full_x0020_Names&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Company_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Role_x0020_In_x0020_Company&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+              <ui:BuildDataTable DataTable="[baseValuesDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="585,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name_x0020_Set&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Gender&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Country&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="585,3510" sap2010:WorkflowViewState.IdRef="Sequence_11">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser IE: Generate a Random Name - Fake Name Generator" sap:VirtualizedContainerService.HintSize="543,3338" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="Simulate" ScopeGuid="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
+                <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser IE: Generate a Random Name - Fake Name Generator" sap:VirtualizedContainerService.HintSize="543,3418" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="Simulate" ScopeGuid="8d21bc40-da63-4d86-959e-2826817201eb" Version="V1">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="509,3122" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
+                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[convertednumOfPersons &gt; 0]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="509,3162" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
                         <ui:InterruptibleDoWhile.Body>
                           <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="473,2957" sap2010:WorkflowViewState.IdRef="Sequence_12">
                             <Sequence.Variables>
-                              <Variable x:TypeArguments="s:String[]" Name="allGenders">
-                                <Variable.Default>
-                                  <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;Random&quot;, &quot;Male&quot;, &quot;Female&quot;}" />
-                                </Variable.Default>
-                              </Variable>
-                              <Variable x:TypeArguments="s:String[]" Name="allNameSets">
-                                <Variable.Default>
-                                  <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;American&quot;, &quot;Brazil&quot;,&quot;Chinese&quot;, &quot;French&quot;, &quot;German&quot;, &quot;Igbo&quot;}" />
-                                </Variable.Default>
-                              </Variable>
-                              <Variable x:TypeArguments="s:String[]" Name="allCountries">
-                                <Variable.Default>
-                                  <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;Australia&quot;, &quot;Canada&quot;, &quot;Estonia&quot;, &quot;Greenland&quot;, &quot;South Africa&quot;, &quot;Uruguay&quot;}" />
-                                </Variable.Default>
-                              </Variable>
+                              <Variable x:TypeArguments="s:String[]" Default="[{&quot;Random&quot;, &quot;Male&quot;, &quot;Female&quot;}]" Name="allGenders" />
+                              <Variable x:TypeArguments="s:String[]" Default="[{&quot;American&quot;, &quot;Brazil&quot;,&quot;Chinese&quot;, &quot;French&quot;, &quot;German&quot;, &quot;Igbo&quot;}]" Name="allNameSets" />
+                              <Variable x:TypeArguments="s:String[]" Default="[{&quot;Australia&quot;, &quot;Canada&quot;, &quot;Estonia&quot;, &quot;Greenland&quot;, &quot;South Africa&quot;, &quot;Uruguay&quot;}]" Name="allCountries" />
                               <Variable x:TypeArguments="x:Int32" Name="randomGenderInt" />
                               <Variable x:TypeArguments="x:Int32" Name="randomNameSetInt" />
                               <Variable x:TypeArguments="x:Int32" Name="randomCountryInt" />
@@ -238,6 +218,7 @@
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,255" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
@@ -248,7 +229,7 @@
                                       <OutArgument x:TypeArguments="x:Int32">[randomGenderInt]</OutArgument>
                                     </ui:AssignOperation.To>
                                     <ui:AssignOperation.Value>
-                                      <InArgument x:TypeArguments="x:Int32">[new Random().Next(0, 2)]</InArgument>
+                                      <InArgument x:TypeArguments="x:Int32">[new Random().Next(0, 3)]</InArgument>
                                     </ui:AssignOperation.Value>
                                   </ui:AssignOperation>
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -264,7 +245,7 @@
                                       <OutArgument x:TypeArguments="x:Int32">[randomNameSetInt]</OutArgument>
                                     </ui:AssignOperation.To>
                                     <ui:AssignOperation.Value>
-                                      <InArgument x:TypeArguments="x:Int32">[new Random().Next(0, 5)]</InArgument>
+                                      <InArgument x:TypeArguments="x:Int32">[new Random().Next(0, 6)]</InArgument>
                                     </ui:AssignOperation.Value>
                                   </ui:AssignOperation>
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -280,7 +261,7 @@
                                       <OutArgument x:TypeArguments="x:Int32">[randomCountryInt]</OutArgument>
                                     </ui:AssignOperation.To>
                                     <ui:AssignOperation.Value>
-                                      <InArgument x:TypeArguments="x:Int32">[new Random().Next(0, 5)]</InArgument>
+                                      <InArgument x:TypeArguments="x:Int32">[new Random().Next(0, 6)]</InArgument>
                                     </ui:AssignOperation.Value>
                                   </ui:AssignOperation>
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
@@ -305,7 +286,7 @@
                               <uix:NSelectItem.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-cs-sw.php" DesignTimeRectangle="416, 212, 200, 25" ElementType="DropDown" FriendlyName="'Male'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='select-one' class='' aaname='Gender' /&gt;" Guid="1b2bce60-69be-447f-91d3-4ad0cf10f46b" InformativeScreenshot="6064fbacbdc18bb5c3ac1922cc646af2.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Male, Czech, Sweden - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target DesignTimeRectangle="332, 208, 80, 32" ElementType="ListItem" FriendlyName="'Gender'" FullSelectorArgument="&lt;webctrl parentid='options' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='options' tag='LI' type='' class='lab' aaname='Gender' check:innerText='Gender' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAkCAYAAAAXSR0AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGISURBVGhD7ZWBjYMwEAS/VzqgBUqgA1qgBbqgGKKNsvn7k40VaUN4siOdwOaM7cE2P5uRYqFiLFSMhYqxUDEWKsZCxVioGAsVY6Fivkbosixb13X3wP27OFxonFiMeZ4fGe/hkkLHcXxOal3XR+1vfaxTczmhWIF7E5qm6Y/QYRie+QhIJ3yGa9/3xRyQ38GI/cePjEAbEvvB+HCP6x6HCeXgIKAFJXHibEthLCPwERAs5za4AtTXcnjcUC7bxH4YpxFKSRxsDa7kmBdXN+BEYw6fc6WzTHlZKMvxA8ccvKPUT4uPCY2DZ6Aub8EcoCU0fgAeI7E/3HML1+L0Qjm4vOXz2Zq3XYnSRPmOV4Xm8URK/bT4+E8p18dyjZbQKK8mtJSTObVQwAHGSZRE83jgTwggn6upJRTwHSyX+qkJQx2oPd/jUKEgrowYUR4onaWvCAWsQ1AwgkIBt34O8C+EXh0LFWOhYixUjIWKsVAxFirGQsVYqBgLFWOhYixUjIWKsVAxFipl227CWFRM3GU77gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -357,7 +338,7 @@
                               <uix:NSelectItem.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-cs-sw.php" DesignTimeRectangle="416, 245, 200, 25" ElementType="DropDown" FriendlyName="'Czech'" FullSelectorArgument="&lt;webctrl id='n' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='n' tag='SELECT' type='select-one' class='' aaname='Name set' /&gt;" Guid="66171826-6d6f-489d-90cd-1fd1c55a4fdc" InformativeScreenshot="bb7c5d085842a45796a60b2aa9a25900.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Male, Czech, Sweden - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target DesignTimeRectangle="332, 241, 80, 32" ElementType="ListItem" FriendlyName="'Name set'" FullSelectorArgument="&lt;webctrl idx='3' parentid='options' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='options' tag='LI' class='lab' aaname='Name set' check:innerText='Name set' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAkCAYAAAAXSR0AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGpSURBVGhD7ZOBbYNAEATTqzugBUpwB26BFuiCYogWZZ3N6Z9gWDlStCOdDMdzfzd+PtZgJULNRKiZCDUToWYi1EyEmolQMxFqJkLNRKiZl4SO47jebrctcE2maXrm/xM617IsX9l9TgvVTSL0m1NCh2HYfu/3+5ZvCeW9BtYR1kKNumae5x+5Oow+Q2jdCt6t69E/0d4ZoPbA2NsLnBKKX4pAw9oU0aa1OVwDPe1A1+AZ4B68VzmE961BdT33RY69PR6P7VnvYOg93jvCaaFsFs20hFZ4qjEEYC0Oo8NTDgemAApmDVClK3wf0YLPVBZz6OGtQgGHaQlVQRpnhCIA/5RWtIT2Ptu9Z4w/EUoJOijQRvipXTmhCFBrHKEnTvM9WW8XCphjAJ5cfqrAIZR1df9XqIJ4zf0qR6RXLgutJwBUEdr8FaE9CbhmHQXvcz/Aevyja32C3jCX7of7I1wWCpjXxjSHARwnlLCWRk9oXVd7rweCQYHoRfP6R7Z4SWj4nQg1E6FmItRMhJqJUDMRaiZCzUSomQg1E6FmItRMhJqJUDMRamVdPwECuuIKmvDh4QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -403,7 +384,7 @@
                               <uix:NSelectItem.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-cs-sw.php" DesignTimeRectangle="416, 278, 200, 25" ElementType="DropDown" FriendlyName="'Sweden'" FullSelectorArgument="&lt;webctrl id='c' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='c' tag='SELECT' type='select-one' class='' aaname='Country' /&gt;" Guid="c1df306c-1f05-4976-8dea-20e189492949" InformativeScreenshot="7f902ab7184d3ad25295c854f64bed66.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Male, Czech, Sweden - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target DesignTimeRectangle="351, 279, 56, 17" ElementType="Text" FriendlyName="'Country'" FullSelectorArgument="&lt;webctrl aaname='Country' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Country' tag='LABEL' type='' class='' check:innerText='Country' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAVCAYAAAAaX42MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVFhH7ZWBcYMwDEW7KxuwAiOwASuwAlswDL3X8jihGFJ6adoS3p0usbHl/y2RvE0vxmX47FyGz85luO/7qaqqVdR1PT99Hl3XLec/kpXhpmluDhnH8WPctu088xx+3HCs7DAM8+wnmI6GqbhrCcRJSSh7GXOhENf4jLCTSl1GoMui8GmeqAet4lzUtxg20b32NQmiwH1eyFHD5lG04kp5wPNixLXuj5cWWQx7oKJKlJJw63GuJHTPsGhkbw3kdZLPcGwh5JBhk8QuiIb5/luGow7aWj92kBxq6b9sGDTpeXkvHPrRcs2WYXiU4a13cM9wzEtwbmYxDCYjJP8t5VZxj89za4FjRX7FcCkP5HURtRq5cLAyDPFmjdzmmjYwELGixncqDLliGNgzDGrLmuXG8H/Hyym1M5zKcHwNSu0MpzJsu2+1M5yupe/xYoan6R2Z871l8GHaLQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -463,7 +444,7 @@
                               <uix:NGetText.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-us-us.php" DesignTimeRectangle="697, 297, 345, 20" FriendlyName="'Master Builder'" FullSelectorArgument="&lt;webctrl idx='14' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="250dfc1e-1a6e-416f-9007-32a497035a52" InformativeScreenshot="d5244a5b2cb210fc571ce6b4c78c1cb5.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target DesignTimeRectangle="512, 297, 170, 20" FriendlyName="'Company'" FullSelectorArgument="&lt;webctrl idx='17' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Company' check:innerText='Company' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK4AAAAYCAYAAABjn8aGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHTSURBVHhe7ZaBjcIwEAS/2nRACXSQDiiBGqiCYvJanomWIyCF/xc5sSNZJD777CjjI19TCA2JuKElETe0JOKGlkTc0JKIG1oScUNL7sQ9HA7TMAw3bb/fX6MhbIMbcXe73UVU/cLpdLr0SegQtsIsrlfa8/l87f1B8rq4jKMdj8drZJrGcbz0qUpzENQ0X3m5V1NeweFQYz6NvWgN76eB5645WIf9KA7+3KEPs7i81GefBS5HlQGxXRqN9zlUcmThvooryMMYieuHp8Z9HZ6hrrMkqWK699xh+8zi8kK9GlWqCIJKSB9C+QEgN3J49RQuLgfC+yRlpcZdXP4BfJ06RvP9XtehD6vElYwa41JWOdaKqzlL4lbJhFdMbxrr4x+JK3gG7ZO4H8TQg1WfCu8Ul7WRzOdorI9/Jq7LSk72Ffowi+vVjJcMkkRxxiyJ++qngtZaEreKyTU5XhVX0LcUCz2YxRVUXSQUCIIwvGwEYw7xvxKXaqh8gnW4Vy7mrBWXPar5PkMfbsQVLsSjl1vjiCJ+K643z+FiEuN6rbje73sPfbgT9x0sVdz/pFbr0I+PFJdqXf9JQh8+TlxfK58JfdmEuCGsJeKGlkTc0JKIGxoyTd/JVLvZCJL7PgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -477,7 +458,7 @@
                               <uix:NGetText.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-us-us.php" DesignTimeRectangle="697, 330, 345, 20" FriendlyName="'Public relations'" FullSelectorArgument="&lt;webctrl idx='15' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="514ab699-cc7d-40e7-acb8-e78282150987" InformativeScreenshot="2b815a1490a12492885789a09733572f.png" ScopeSelectorArgument="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target DesignTimeRectangle="512, 330, 170, 20" FriendlyName="'Occupation'" FullSelectorArgument="&lt;webctrl idx='18' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Occupation' check:innerText='Occupation' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK4AAAAYCAYAAABjn8aGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHrSURBVHhe7ZeLbQIxEAVTLR1QAh3QASVQA1VQzEUPMafHshCIBDmHN9KKw15/Tjt2yNcUwoBE3DAkETcMScQNQxJxw5BE3DAkETcMyUeJezwep9VqdYrdbnduDSNyJa4KSnGJ/X5/7h2HzWZz2rs+IeL+Hy7EXa/Xp6Jut9tzSy/ACIy67/AYs7h+0zp+S/nNq2faCb/Fap8ORTfX4XCY29TvOTpAPCuUW8d4aKyo47yfZ3+Xmu+y+1o1j/XC+5nF7W5boI+CUkC1g6RVeKERTQX+jbisVw+Vxvg+u0PX3bjd+uQxH3PxblVcwfv73OG9zOLW4jgUt8qHmE4VwXlWXHJ+WrPrZx8uV5371rze5vsjpzso4b08La4KTq4KX6FPxa1UcYSLof4uR9Q234cHcj0irs/h70Kb3iHiLpOnfyrcKjbQ90px+VOtED4m4n4GT/9z1kniIMwrfyrUQ9btCbnvievf9Qy0aS7fH3NH3L9nFld0t67fttBJIRHqDeUyaB4+1adcwVzkV7k8h/U4HHxXHmOqXKwr7s3NO9dxEXeZXIgrvCgERXa6PLUJF4ToRFDcE9fDBRTeh8gK5BLerujEFb4HBQdCRNxlciXuX3NLrhCciBuGJOKGIVmcuCE8QsQNQxJxw4BM0zdspE3G+Qen0wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -507,18 +488,25 @@
                             </Assign>
                           </Sequence>
                         </ui:InterruptibleDoWhile.Body>
-                        <ui:InterruptibleDoWhile.Condition>
-                          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="convertednumOfPersons &gt; 0" />
-                        </ui:InterruptibleDoWhile.Condition>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </ui:InterruptibleDoWhile>
                     </ActivityAction>
                   </uix:NApplicationCard.Body>
                   <uix:NApplicationCard.TargetApp>
                     <uix:TargetApp Area="0, 78, 1366, 650" BrowserType="IE" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPlSURBVGhD7ZnbSxRhGMYLwvPmeiK8UIM06Kq/wCsDk4qCuinzFP5DgRRJ90GoBNFNZgaeD+vu6h5a1/V8yA4XqRmi7tvzDA1sMs5+uzPuauzAD2Fwv/f5zXzfN+/OnvvhKJOzjLLA9xRjlMEIUwEO9A18BV/ABlh3lMraCcGxWYO1WJO148mYCnCATbBWUCrzuUUSynFKIKdQ/MBnMxyTY7MGa62iJmszg1E2HVMBXgWGjxSVS6SuQUL3Hoj/7n2ZOSE4NmtEbjRoNSnBDEbZdI4V4K3jrVzILxF/ZbXsuD0S3d+Xw729E4U1fnmnxV9Vo9VmBrNpZCrA+TibXywuCGz7/JKqYycQFBcEWJsZkhbgovqMQUYqrshWCgW2ITBSWSNB1GYGSwIBDDIEgZ8pFNiCwBDueiDPJoHBjEBih+1TKNUCti7ihASiUVkfGZW5112y2NUtS109spwAK2Cj542sPe2QmfIq69toogLRw0Ppa2qVV9kOeVdQLL2gr6BEmU9g2FEiHtQN4yG2ir+WHmTJCAw/bpX3WQUygc/N8CGIUKoEwSxY+BveUiuRrIALd2A4+6KEEGQFQYyatuNgPduauWQF3E1tMg6BeYRnGAZJBD10vOA6tgtMYAoNYA1wSnAqLCmyDHgXdOm0CQw0tsjbC/kymOuUibwicSkwBbwgiAfXAsQpoiphrwC20ZXePgk/75TFFy9lBawqst75UjbxN1JbJ/OQibf/69gqYPXgHQy3tmtfbLgLxduByKkT8EPAm12orYkzKTANARd2MS5srgOjbLGcOgEvBCbPusCZvgM+CLghkLY1wK2UQZLh8OBAQi3t2muWtOxCDO/ueCYfG5tluLlNxpqfyLgCk8ADgsB/7brMoSZrM4NRtljsFcBV7H/YJN3ns+VDlkNrKYYUYPPH/onbZxj19E40LQJj6IX6Ed6LVpqt8RzmcjwigM0fFy7bCJU2Wsd2gSl0o2O4mgzFzzOMKtx1GJy1Va4+sV3AAwHu44sQUNkGrXJiApwOqtPAChmB2CMjkAQZgdgjI5AE/78A3xCr/j5AAS8E9H4+7QJ8MxCCwFhFtdIvNBTwQcADAdV+3iqmAnzFx9bWQwHXlPYj3MHuruwfgecOdn/L/s6OhB61aD+ZqvbzVjlWgLDB4pUMOi+Jr7ZOpm7ekdH62zJUf+sfRsAEzs8A/+WrEkEnqvpexyqmAryCDMLGLJjrFDeu7DgYxRSJhd2nC+f5TYp3LJF+3iqmAgzAjpISDMWFyfed7N2PQkm+jebCZ/hUTB9iKkAoQRiIMkTv33X084T/p3/GaDy7iStwuimTP2f2Ock90e+dAAAAAElFTkSuQmCC" InformativeScreenshot="978c67adabdd3d7a643de763bd88cc1e.png" Selector="&lt;html title='Generate a Random Name - Fake Name Generator' /&gt;" Url="https://www.fakenamegenerator.com/" />
                   </uix:NApplicationCard.TargetApp>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </uix:NApplicationCard>
               </Sequence>
-              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign sap:VirtualizedContainerService.HintSize="585,60" sap2010:WorkflowViewState.IdRef="Assign_8">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[file]</OutArgument>
                 </Assign.To>
@@ -526,11 +514,11 @@
                   <InArgument x:TypeArguments="x:String">["Fake_Persons_List_"+CurrentDate+".xlsx"]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[excelDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Identities" WorkbookPath="[&quot;Data\&quot; + file]" />
-              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[baseValuesDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="BaseValues" WorkbookPath="[&quot;Data\&quot; + file]">
+              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[excelDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="585,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Identities" WorkbookPath="[&quot;Data\&quot; + file]" />
+              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[baseValuesDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="585,115" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="BaseValues" WorkbookPath="[&quot;Data\&quot; + file]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:WriteRange>
@@ -548,12 +536,12 @@
         </If>
       </TryCatch.Finally>
     </TryCatch>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Fake Persons Generated. Continuing with phase 2&quot;]" />
-    <If Condition="[isCorrect]" sap:VirtualizedContainerService.HintSize="484,421" sap2010:WorkflowViewState.IdRef="If_2">
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="701,84" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Fake Persons Generated. Continuing with phase 2&quot;]" />
+    <If Condition="[isCorrect]" DisplayName="Phase 2" sap:VirtualizedContainerService.HintSize="701,421" sap2010:WorkflowViewState.IdRef="If_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
@@ -564,7 +552,7 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[rpaDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Identities" WorkbookPath="[&quot;Data\&quot; + file]" />
